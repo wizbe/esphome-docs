@@ -44,6 +44,8 @@ The communication happens via :ref:`I²C Bus <i2c>`, you need to have an ``i2c:`
     i2c:
       sda: D0
       scl: D1
+      
+      #on esp32 (nodemcu-32s) these pin are reserved. use other pin and use the GPIOX naming convention
 
     display:
       - platform: lcd_pcf8574
